@@ -13,10 +13,12 @@ ul {
 }
 
 body {
+  color: #555;
   margin: 0 auto;
-  width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(85, 81, 81);
+  font-size: 14px;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
 /*
@@ -67,6 +69,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 }
 
 .nav-center {
+  color: #555;
   width: 100%;
   height: 50px;
   display: flex;
@@ -74,13 +77,15 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   justify-content: space-between;
 }
 
+.nav-center-left > li a {
+  margin-left: 18px;
+  color: #555;
+
+}
+
 .nav-center-left {
   width: fit-content;
   display: flex;
-}
-
-.nav-center-left li {
-  margin-left: 30px;
 }
 
 .nav-bottom {
@@ -99,6 +104,8 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 /* CONTENT */
 
 .content {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 1200px;
 }
@@ -106,34 +113,37 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 /* TOP CONTENT */
 
 .top {
-  width: 100%;
-  height: 300px;
+  height: 40%;
+  margin: 0 auto;
+  padding: 4px;
+  position: relative;
 }
 
 .top-left {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 100%;
 }
 
 .top-left-cover-image {
   position: absolute;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/polestar-production-begins-2-ev-china-geely-volvo-car-796x448.jpg");
-  width: 796px;
-  height: 448px;
-  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
   z-index: -1;
 }
 
 .top-left-cover-gradient {
   position: absolute;
   background: rgb(255,0,0);
-  background: linear-gradient(141deg, rgba(255,0,0,0.9304096638655462) 87%, rgba(0,0,0,1) 98%);
-  width: 796px;
-  height: 448px;
+  background: rgb(216,18,18);
+background: linear-gradient(143deg, rgba(216,18,18,1) 64%, rgba(23,18,18,1) 100%);
+  width: 100%;
+  height: 100%;
   z-index: 0;
   mix-blend-mode: lighten;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .top-left-cover-logo {
@@ -141,7 +151,8 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg");
   width: 400px;
   height: 96px;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
   left: 24px;
   top: 24px;
 }
@@ -151,11 +162,45 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   width: fit-content;
   height: fit-content;
   background-size: cover;
-  left: 550px;
+  right: 24px;
   top: 24px;
   color: silver;
   font-weight: bold;
   background-color: #000;
+}
+
+.cover-header {
+  /* background: black; */
+  text-align: left;
+  color: #fff;
+  bottom: 4px;
+  left: 4px;
+  padding: 20px 16px;
+  position: absolute;
+  right: 4px;
+  z-index: 3;
+  width: 100%;
+}
+
+.cove-tittle a {
+  font-size: 56px;
+  margin-bottom: 0.25em;
+  letter-spacing: 0.015em;
+  padding: 0 0 14px;
+}
+
+.insight {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.cover-byline {
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 12px;
+  line-height: 16px;
 }
 
 /* FOOTER */
