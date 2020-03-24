@@ -22,13 +22,13 @@ body {
 /*
 
 EXAMPLE ON HOW TO USE MEDIA QUERY
-
+*/
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
     width: 100%;
   }
-}*/
+}
 
 .nav {
   width: 100%;
@@ -103,6 +103,39 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   height: 1200px;
 }
 
+/* TOP CONTENT */
+
+.top {
+  width: 100%;
+  height: 300px;
+}
+
+.top-left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.top-left-cover-image {
+  position: absolute;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/polestar-production-begins-2-ev-china-geely-volvo-car-796x448.jpg");
+  width: 796px;
+  height: 448px;
+  background-size: cover;
+  z-index: -1;
+}
+
+.top-left-cover-gradient {
+  position: absolute;
+  background: rgb(255,0,0);
+  background: linear-gradient(141deg, rgba(255,0,0,0.804359243697479) 45%, rgba(0,0,0,0.8939950980392157) 98%);
+  width: 796px;
+  height: 448px;
+  z-index: 0;
+  mix-blend-mode: lighten;
+  background-size: cover;
+}
+
 /* FOOTER */
 
 .footer {
@@ -142,6 +175,12 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   text-align: center;
   width: 20px;
 }
+
+.footer-social-media .icon:hover {
+  background: #ff0;
+  border-color: #f00;
+}
+
 
 .footer-links {
   height: 35px;
