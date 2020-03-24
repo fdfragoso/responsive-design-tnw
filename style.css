@@ -128,12 +128,34 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 .top-left-cover-gradient {
   position: absolute;
   background: rgb(255,0,0);
-  background: linear-gradient(141deg, rgba(255,0,0,0.804359243697479) 45%, rgba(0,0,0,0.8939950980392157) 98%);
+  background: linear-gradient(141deg, rgba(255,0,0,0.9304096638655462) 87%, rgba(0,0,0,1) 98%);
   width: 796px;
   height: 448px;
   z-index: 0;
   mix-blend-mode: lighten;
   background-size: cover;
+}
+
+.top-left-cover-logo {
+  position: absolute;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg");
+  width: 400px;
+  height: 96px;
+  background-size: cover;
+  left: 24px;
+  top: 24px;
+}
+
+.top-left-cover-date {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  background-size: cover;
+  left: 550px;
+  top: 24px;
+  color: silver;
+  font-weight: bold;
+  background-color: #000;
 }
 
 /* FOOTER */
