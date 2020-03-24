@@ -1,0 +1,52 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-logo {
+
+}
+
+.nav-top {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-top ul {
+  width: 100%;
+  color: white;
+  display: flex;
+}
+
+.nav-top-right {
+  color: white;
+  display: flex;
+  align-self: flex-end;
+}
+
+.nav-center {
+  width: 100%;
+  background-color: #fff;
+}
+
+.nav-center-links {
+
+}
+
+.nav-center-search {
+
+}
+
+.nav-bottom {
+  width: 100%;
+  background-color: #ffff00;
+}
+
