@@ -135,7 +135,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  width: 39%;
+  width: 40%;
 }
 
 .top-right-article-top {
@@ -156,11 +156,21 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 
 .top-right-cover-image-gradient {
   position: absolute;
+  transition: background-color 0.4s ease;
+  transition-property: background-color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
   background: rgba(0, 0, 0, 0.25) url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
   background-size: 100% 100%;
+  will-change: background-color;
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+.top-right-cover-image-gradient:hover {
+  background: rgba(0, 0, 0, 0.25) url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
 }
 
 .top-right-cover-image-bottom {
@@ -223,16 +233,14 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 }
 
 .cover-header {
-  /* background: black; */
   text-align: left;
   color: #fff;
   bottom: 4px;
-  left: 4px;
   padding: 20px 16px;
   position: absolute;
-  right: 4px;
   z-index: 3;
-  width: 100%;
+  left: 4px;
+  width: fit-content;
 }
 
 .cover-tittle a {
