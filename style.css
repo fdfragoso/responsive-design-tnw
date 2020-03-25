@@ -80,7 +80,6 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 .nav-center-left > li a {
   margin-left: 18px;
   color: #555;
-
 }
 
 .nav-center-left {
@@ -113,6 +112,9 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 /* TOP CONTENT */
 
 .top {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
   height: 40%;
   margin: 0 auto;
   padding: 4px;
@@ -120,9 +122,33 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 }
 
 .top-left {
+  flex: 5;
   position: relative;
-  width: 60%;
   height: 100%;
+  width: 59%;
+}
+
+.top-right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 39%;
+}
+
+.upper-grid {
+  flex: 1 1 100%;
+  position: relative;
+  height: 49%;
+  background-color: black;
+}
+
+.lower-grid {
+  flex: 1 1 100%;
+  position: relative;
+  height: 49%;
+  background-color: blue;
 }
 
 .top-left-cover-image {
@@ -136,9 +162,9 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 
 .top-left-cover-gradient {
   position: absolute;
-  background: rgb(255,0,0);
-  background: rgb(216,18,18);
-background: linear-gradient(143deg, rgba(216,18,18,1) 64%, rgba(23,18,18,1) 100%);
+  background: rgb(255, 0, 0);
+  background: rgb(216, 18, 18);
+  background: linear-gradient(143deg, rgba(216, 18, 18, 1) 64%, rgba(23, 18, 18, 1) 100%);
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -157,7 +183,7 @@ background: linear-gradient(143deg, rgba(216,18,18,1) 64%, rgba(23,18,18,1) 100%
   top: 24px;
 }
 
-.top-left-cover-date {
+.cover-date {
   position: absolute;
   width: fit-content;
   height: fit-content;
@@ -182,11 +208,15 @@ background: linear-gradient(143deg, rgba(216,18,18,1) 64%, rgba(23,18,18,1) 100%
   width: 100%;
 }
 
-.cove-tittle a {
+.cover-tittle a {
   font-size: 56px;
   margin-bottom: 0.25em;
   letter-spacing: 0.015em;
   padding: 0 0 14px;
+}
+
+.top-right .cover-tittle a {
+  font-size: 28px;
 }
 
 .insight {
@@ -198,9 +228,15 @@ background: linear-gradient(143deg, rgba(216,18,18,1) 64%, rgba(23,18,18,1) 100%
 }
 
 .cover-byline {
-  color: hsla(0, 0%, 100%, .6);
+  color: hsla(0, 0%, 100%, 0.6);
   font-size: 12px;
   line-height: 16px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cover-byline * {
+  margin-right: 4px;
 }
 
 /* FOOTER */
@@ -247,7 +283,6 @@ background: linear-gradient(143deg, rgba(216,18,18,1) 64%, rgba(23,18,18,1) 100%
   background: #ff0;
   border-color: #f00;
 }
-
 
 .footer-links {
   height: 35px;
