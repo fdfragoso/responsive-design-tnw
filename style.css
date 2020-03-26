@@ -114,12 +114,12 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 
 .top {
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
   height: 40%;
   margin: 0 auto;
-  padding: 4px;
+  /* padding: 4px; */
   position: relative;
+  width: 100%;
 }
 
 .top-left {
@@ -127,22 +127,23 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   position: relative;
   height: 100%;
   width: 59%;
+  margin-right: 0.6em;
 }
 
 .top-right {
   flex: 3;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   justify-content: space-between;
   width: 40%;
 }
 
 .top-right-article-top {
-  flex: 1 1 100%;
+  flex: 1 1 90%;
   position: relative;
   height: 49%;
   background-color: black;
+  margin-bottom: 0.6em;
 }
 
 .top-right-cover-image {
@@ -151,6 +152,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   z-index: 0;
 }
 
@@ -183,7 +185,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 }
 
 .top-right-article-bottom {
-  flex: 1 1 100%;
+  flex: 1 1 90%;
   position: relative;
   height: 49%;
 }
@@ -194,6 +196,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   width: 100%;
   height: 100%;
   background-size: 100% 100%;
+  overflow: hidden;
   z-index: -1;
 }
 
@@ -275,29 +278,43 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 }
 
 /* LATEST NEWS */
+.wrapper {
+  margin: 0 auto;
+  width: 70%;
+  padding: 0 20px;
+}
 
 .latest-news {
-  width: 100%;
-  height: 1000px;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1em; */
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: -8px;
 }
 
-.latest-news-grid {
-  width: 100%;
-  height: 1000px;
-}
-
-.latest-news-article {
-  max-width: 516px;
-  width: 516px;
-  height: 270px;
+ .latest-news-article { 
   background-color: white;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.latest-news-article a {
+  margin-bottom: 8px;
+
 }
 
 .latest-news-article img {
-  max-width: 516px;
-  width: 516px;
-  height: 270px;
-}
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+} 
 
 .story-title a {
   color: #000;
@@ -310,7 +327,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .story-byline a {
