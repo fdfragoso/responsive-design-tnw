@@ -279,7 +279,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 
 /* LATEST NEWS */
 .latest-news-wrapper {
-  margin: 50px auto 20px auto;
+  margin: 100px auto 20px auto;
   width: 80%;
   height: 600px;
   padding: 0 20px;
@@ -299,6 +299,18 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   flex-flow: row wrap;
   margin: -8px;
   margin-left: 20px;
+}
+
+.section-title {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: orangered;
+}
+
+.section-title:hover {
+  color: #000;
+  cursor: pointer;
 }
 
  .latest-news-article { 
@@ -351,6 +363,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   flex-direction: column;
   background-color: #131313;
   color: #aaa;
+  margin-top: 50px;
 }
 
 .footer-top {
