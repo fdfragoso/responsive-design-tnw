@@ -355,12 +355,9 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 /* FUNIDNG SECTION */
 
 .section-title-funding {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  color: orangered;
   margin-top: 100px;
-  margin-bottom: 20px;
 }
 
 .section-title-funding:hover {
