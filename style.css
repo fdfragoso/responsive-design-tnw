@@ -278,7 +278,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 }
 
 /* LATEST NEWS */
-.latest-news-wrapper {
+.wrapper {
   margin: 100px auto 20px auto;
   width: 80%;
   height: 600px;
@@ -354,6 +354,15 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 .story-byline a {
   color: #aaa;
 }
+
+/* FUNIDNG SECTION */
+
+.funding {
+  margin: 100px auto 20px auto;
+  width: 80%;
+  height: 600px;
+  padding: 0 20px;
+} 
 
 /* FOOTER */
 
