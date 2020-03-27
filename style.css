@@ -449,12 +449,74 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   margin: 0 0 24px;
   /* padding: 12px; */
   width: 33%;
-  background: cadetblue;
+ /*  background: cadetblue; */
 }
 
 .section-article {
-  background-color: brown;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Duo-voice-calling-796x398.jpg"); 
+  background-size: cover;
+  background-position: 50%;
   width: 100%;
+  padding-top: 25%;
+}
+
+.section-article-popular {
+  position: relative;
+  z-index: 0;
+}
+
+.section-article-popular-gradient {
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section-article-popular-header {
+  z-index: 2;
+  width: 95%;
+  position: relative;
+  padding: 14px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section-latest {
+  margin-top: 3px;
+  width: 100%;
+  background-color: rgba(255,68,34,.06);;
+  display: flex;
+  color: #f42;
+  height: fit-content;
+}
+
+.section-latest a {
+  color: #f42;
+}
+
+.section-latest-header {
+  width: 70%;
+  padding: 10px 14px 0;
+}
+
+.section-latest-thumb {
+  width: 96px;
+  height: 96px;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_25b36293.png");
+  background-size: cover;
+  background-position: 50%;
+}
+
+.section-latest-thumb a {
+  width: 96px;
+  height: 96px;
+  
 }
 
 /* GENERAL USE */
