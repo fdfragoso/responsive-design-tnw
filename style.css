@@ -281,13 +281,13 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 
 .wrapper {
   margin: 100px auto 20px auto;
-  width: 80%;
+  width: 85%;
   padding: 0 20px;
 }
 
-/* LATEST NEWS */
+/* LATEST */
 
-.latest-news {
+.latest {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
@@ -431,6 +431,23 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   top: 0;
   left: 0;
   z-index: 10;
+}
+
+/* TOOLS SECTION */
+
+.tools-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.tools-section .tool {
+  background-color: linear-gradient(to bottom, gray, black);
+  height: 682px;
+  margin: 0 0 24px;
+  padding: 12px;
+  width: 392px;
+  background: cadetblue;
 }
 
 /* GENERAL USE */
