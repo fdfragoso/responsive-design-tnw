@@ -107,7 +107,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   position: relative;
   z-index: 2;
   width: 100%;
-  height: 2200px;
+  height: 6000px;
 }
 
 /* TOP CONTENT */
@@ -440,14 +440,21 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 40px;
+  margin-top: 100px;
 }
+
 .tools-section .tool {
   background-color: linear-gradient(to bottom, gray, black);
   height: 682px;
   margin: 0 0 24px;
-  padding: 12px;
-  width: 392px;
+  /* padding: 12px; */
+  width: 33%;
   background: cadetblue;
+}
+
+.section-article {
+  background-color: brown;
+  width: 100%;
 }
 
 /* GENERAL USE */
