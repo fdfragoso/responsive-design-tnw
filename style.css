@@ -477,6 +477,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 }
 
 .section-article-popular-header {
+  color: #fff;
   z-index: 2;
   width: 95%;
   position: relative;
@@ -485,6 +486,20 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   left: 0;
   right: 0;
   bottom: 0;
+}
+.section-article-popular-section {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.section-article-popular-byline {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
 }
 
 .section-latest {
@@ -516,7 +531,23 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 .section-latest-thumb a {
   width: 96px;
   height: 96px;
-  
+}
+
+/* .section-headlines {
+  height: fit-content;
+} */
+
+.section-headline {
+  /* background: cadetblue; */
+  color: #555;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+  padding: 6px 0 6px 14px;
+  position: relative;
+}
+
+.section-headline .section-headlinelink {
+  color: #555;
 }
 
 /* GENERAL USE */
