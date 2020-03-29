@@ -571,15 +571,52 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin: -12px;
 }
 
 .latest-deal {
-  flex-basis: 22%;
+  flex-basis: 25%;
   max-width: 25%;
-  margin-bottom: 5%;
   padding: 12px;
   position: relative;
   background: cadetblue;
+}
+
+.latest-deal-content {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.latest-deal-content-img {
+  display: block;
+  background-image: url("https://cdnp0.stackassets.com/7a3bbbe12b77586ca58798dc2aac6b0f51f7a8ac/store/f9f2b2fcf253000289dc27dcaaa106fa4b1a0c3e579bbc0612dd572eee70/sale_26993_primary_image.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  padding-top: 74.5%;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.latest-deal-Discount {
+  background-image: url(../img/deals-ribbon.svg);
+background-repeat: no-repeat;
+background-size: contain;
+color: #000;
+display: block;
+height: 80px;
+overflow: hidden;
+pointer-events: none;
+position: absolute;
+right: 0;
+top: 0;
+width: 80px;
+z-index: 10;
 }
 
 /* GENERAL USE */
