@@ -36,6 +36,9 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 
 .nav {
   width: 100%;
+  position: sticky;
+  top: -7%;
+  z-index: 99999;
 }
 
 .nav-top {
@@ -77,6 +80,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .nav-center-left > li a {
@@ -567,6 +571,19 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   justify-content: space-between;
 }
 
+.latest-deals .section-title {
+  flex: 1;
+}
+
+.deals-header-more {
+  flex: 1;
+  color: #f42;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
 .lastest-deals-flex {
   display: flex;
   flex-flow: row wrap;
@@ -579,7 +596,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   max-width: 25%;
   padding: 12px;
   position: relative;
-  background: cadetblue;
+
 }
 
 .latest-deal-content {
@@ -604,19 +621,56 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 }
 
 .latest-deal-Discount {
-  background-image: url(../img/deals-ribbon.svg);
-background-repeat: no-repeat;
-background-size: contain;
-color: #000;
-display: block;
-height: 80px;
-overflow: hidden;
-pointer-events: none;
-position: absolute;
-right: 0;
-top: 0;
-width: 80px;
-z-index: 10;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000;
+  display: block;
+  height: 80px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  z-index: 10;
+}
+
+.latest-deal-Discount div {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+}
+
+.latest-deal .story-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.deal-price {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 20px;
+  padding-top: 4px;
+}
+
+.deal-price-old {
+  font-size: 13px;
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+
+.deal-price-new {
+  color: #555;
+  font-size: 16px;
 }
 
 /* GENERAL USE */
