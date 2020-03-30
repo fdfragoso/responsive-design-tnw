@@ -22,6 +22,25 @@ body {
   min-height: 100vh;
 }
 
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::before {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
 /*
 
 EXAMPLE ON HOW TO USE MEDIA QUERY
@@ -34,11 +53,48 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   }
 }
 
+/************************
+* NAVIGATION BAR STYLES *
+*************************/
+
 .nav {
   width: 100%;
   position: sticky;
   top: -7%;
   z-index: 99999;
+  background: #fff;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  left: 0;
+  right: 0;
+  padding-left: 0;
+}
+
+.nav-logo {
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(-106px);
+}
+
+.nav-logo a {
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  display: block;
+  height: 48px;
+  padding: 16px 20px;
+  position: relative;
+  width: 106px;
+  will-change: height;
+  z-index: 2;
+}
+
+.nav-logo img {
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  display: block;
+  height: 16px;
+  position: relative;
+  width: 66px;
+  max-width: 100%;
+  z-index: 999;
 }
 
 .nav-top {
@@ -701,7 +757,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   width: 100%;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   margin-top: 30px;
 }
 
@@ -754,6 +810,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   width: 100%;
   justify-content: center;
   margin: 35px auto;
+  align-items: center;
 }
 
 .footer-bottom h5 {
@@ -772,4 +829,55 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   height: 9px;
   margin-right: 1px;
   vertical-align: baseline;
+}
+
+/***************
+* MEDIA QUERY  *
+****************/
+@media screen and (max-width: 768px) {
+  .nav {
+    height: 80px;
+    position: absolute;
+  }
+
+  .nav-top {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    max-height: 32px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .nav-top li {
+    float: left;
+    margin-left: 12px;
+    position: relative;
+
+  }
+
+  .nav-top li:first-child {
+    margin-left: 20px;
+  }
+
+  .nav-center .nav-center-left {
+    display: block;
+    position: absolute;
+  }
+
+  .footer-top {
+    padding: 3em 0 2em;
+  }
+
+  .footer-social-media {
+    margin: 0 8px;
+    text-align: center;
+  }
+
+  .footer-bottom .footer-bottom-wrapper {
+    display: inline-block;
+    text-align: center;
+  }
+   
 }
