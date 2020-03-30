@@ -41,17 +41,6 @@ body {
   *zoom: 1;
 }
 
-/*
-
-EXAMPLE ON HOW TO USE MEDIA QUERY
-*/
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-    width: 100%;
-  }
-}
 
 /************************
 * NAVIGATION BAR STYLES *
@@ -143,7 +132,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   margin-left: 18px;
   color: #555;
 }
-
+/* possible problem with widht */
 .nav-center-left {
   width: fit-content;
   display: flex;
@@ -178,7 +167,6 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   justify-content: space-between;
   height: 40em;
   margin: 0 auto;
-  /* padding: 4px; */
   position: relative;
   width: 100%;
 }
@@ -187,7 +175,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   flex: 5 3 100%;
   position: relative;
   height: 100%;
-  width: 59%;
+  width: 60%;
   margin-right: 0.6em;
 }
 
@@ -276,7 +264,7 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
 .top-left-cover-logo {
   position: absolute;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg");
-  width: 400px;
+  width: 60%;
   height: 96px;
   background-size: 100% 100%;
   background-position: center;
@@ -300,11 +288,11 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
   text-align: left;
   color: #fff;
   bottom: 4px;
-  padding: 20px 16px;
+  /* padding: 20px 16px; */
   position: absolute;
   z-index: 3;
   left: 4px;
-  width: fit-content;
+  width: fit-content; 
 }
 
 .cover-tittle a {
@@ -879,5 +867,20 @@ EXAMPLE ON HOW TO USE MEDIA QUERY
     display: inline-block;
     text-align: center;
   }
-   
+}
+
+/*
+
+EXAMPLE ON HOW TO USE MEDIA QUERY
+*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightcoral;
+    width: 100%;
+  }
+
+  .cover-header {
+    width: 100%;
+  }
 }
