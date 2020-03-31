@@ -915,10 +915,10 @@ body {
     width: 48px;
     will-change: opacity;
   }
-
+  .nav-center-right .nav-mob-toggle span,
   .nav-mob-toggle span {
     transition: 0.4s;
-    color: #f42;
+    background-color: #f42;
     display: block;
     height: 2px;
     margin-top: -1px;
