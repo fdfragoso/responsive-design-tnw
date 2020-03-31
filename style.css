@@ -140,7 +140,6 @@ body {
 
 .nav-center-right {
   display: flex;
-  
 }
 
 .nav-center-right .icon {
@@ -400,7 +399,19 @@ body {
   padding: 12px;
 }
 
+.latest-news-article-funding { 
+  background-color: white;
+  flex-basis: 25%;
+  max-width: 25%;
+  max-height: 50%;
+  padding: 12px;
+}
+
 .latest-news-article a {
+  margin-bottom: 8px;
+}
+
+.latest-news-article-funding a {
   margin-bottom: 8px;
 }
 
@@ -520,7 +531,6 @@ body {
 .tools-section {
   display: flex;
   flex-flow: row wrap;
-  /* justify-content: space-between; */
   align-content: space-between;
   margin-bottom: 40px;
   margin-top: 100px;
@@ -972,6 +982,24 @@ body {
     padding: 0;
     font-size: 16px;
     margin-top: 4px;
+  }
+
+  .latest-news-article-funding {
+    display: block;
+    width: 100%;
+    background-color: white;
+    max-width: 100%;
+  }
+
+  .tools-section,
+  .tools-section .tool,
+  .tool-apps {
+    display: block;
+    width: 100%;
+    background-color: white;
+    flex-basis: none;
+    max-width: 97.5%;
+    max-height: none;
   }
 
   .footer-top {
