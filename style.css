@@ -1003,6 +1003,42 @@ body {
     max-height: none;
   }
 
+  .latest-deals,
+  .latest-deal-header {
+    display: block;
+    width: 100%;
+  }
+
+  .lastest-deals-flex,
+  .latest-deal {
+    display: block;
+    width: 100%;
+    background-color: white;
+    flex-basis: none;
+    max-width: 97.5%;
+    max-height: none;
+  }
+
+  .latest-deal-content {
+    display: flex;
+    width: 100%;
+  }
+
+  .latest-deal-content-img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    padding: 0;
+  }
+
+  .latest-deal-Discount {
+    display: none;
+  }
+
+  .deal-Price {
+    margin-left: 10px;
+  }
+
   .footer-top {
     padding: 3em 0 2em;
   }
@@ -1018,10 +1054,3 @@ body {
   }
 
 }
-
-/*
-
-EXAMPLE ON HOW TO USE MEDIA QUERY
-*/
-
-
