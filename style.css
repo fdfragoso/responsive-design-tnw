@@ -146,8 +146,11 @@ body {
   border-left: 1px solid #eee;
 }
 
-.glob-search-btn,
 .nav-mob-toggle {
+  display: none;
+}
+
+.glob-search-btn {
   display: block;
   height: 48px;
   opacity: 0.25;
@@ -903,8 +906,14 @@ body {
     display: none;
   }
 
-  .nav-mob-toggle {
+  .nav-mob-toggle,
+  .glob-search-btn {
     display: block;
+    height: 48px;
+    opacity: 0.25;
+    padding: 16px;
+    width: 48px;
+    will-change: opacity;
   }
 
   .nav-mob-toggle span {
