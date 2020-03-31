@@ -861,10 +861,16 @@ body {
   width: 20px;
 }
 
+
 /***************
 * MEDIA QUERY  *
 ****************/
-@media all and (min-width: 320px) and (max-width: 768px) {
+@media all and (min-width: 320px) and (max-width: 768px) { 
+  body {
+    background-color: white;
+    width: 100%;
+  }
+
   .nav {
     background: #fff;
     box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
@@ -894,13 +900,54 @@ body {
     width: 20px;
   }
 
+  .top {
+    display: block;
+    height: fit-content;
+  }
+
   .top-left,
+  .top-right,
   .top-right-article-top,
   .top-right-article-bottom {
     display: block;
     min-height: 30vh;
     position: relative;
     width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .latest,
+  .latest-news {
+    display: block;
+    width: 100%;
+    background-color: white;
+    flex-basis: none;
+    max-width: 97.5%;
+    max-height: none;
+  }
+
+  .latest-news-article {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: lime;
+    max-width: 100%;
+  }
+
+  .story-title,
+  .story-byline {
+    display: block;
+    width: 100%;
+  }
+
+  .latest-news-img {
+    display: block;
+    width: 75px;
+    height: 75px;
   }
 
   .footer-top {
@@ -916,6 +963,7 @@ body {
     display: inline-block;
     text-align: center;
   }
+
 }
 
 /*
@@ -923,13 +971,4 @@ body {
 EXAMPLE ON HOW TO USE MEDIA QUERY
 */
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightcoral;
-    width: 100%;
-  }
 
-  .cover-header {
-    width: 100%;
-  }
-}
