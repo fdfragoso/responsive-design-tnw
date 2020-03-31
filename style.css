@@ -932,14 +932,15 @@ body {
 
   .latest-news-article {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
-    background-color: lime;
+    background-color: white;
     max-width: 100%;
   }
 
   .story-title,
   .story-byline {
+    margin-left: 10px;
     display: block;
     width: 100%;
   }
