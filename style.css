@@ -920,7 +920,7 @@ body {
   .top-right-article-top,
   .top-right-article-bottom {
     display: block;
-    min-height: 30vh;
+    height: 30vh;
     position: relative;
     width: 100%;
     margin-bottom: 10px;
@@ -928,6 +928,7 @@ body {
 
   .wrapper {
     width: 100%;
+    padding-top: 190px;
   }
 
   .latest,
