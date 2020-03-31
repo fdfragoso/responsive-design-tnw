@@ -951,6 +951,29 @@ body {
     height: 75px;
   }
 
+  .latest,
+  .latest-funding,
+  .sextion-title,
+  .section-title-funding {
+    display: block;
+    width: 100%;
+  }
+
+  .section-title-funding h3 {
+    font-size: 24px;
+  }
+  
+  .section-title-funding ul {
+    display: block;
+  }
+
+  .section-title-funding li {
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
   .footer-top {
     padding: 3em 0 2em;
   }
