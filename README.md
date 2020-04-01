@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo](https://raw.githack.com/JelilFaisalAbudu/teardown/homepage/index.html)
+[Live Demo](https://raw.githack.com/fdfragoso/responsive-design-tnw/features/index.html)
 
 ## Getting Started
 
