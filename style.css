@@ -876,22 +876,46 @@ body {
 ****************/
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
   .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+    height: 48px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
   }
 
-  .nav-logo {
-    transform: translateX(0);
-
+  .glob-search-btn {
+    display: block;
+    height: 48px;
+    opacity: 0.25;
+    padding: 16px;
+    width: 48px;
+    will-change: opacity;
   }
 
   .nav-top {
     display: none;
   }
 
-  .nav-bottom {
-    display: block;
+  .nav-center-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-center-left {
+    display: none;
+  }
+
+  .nav-logo {
+    transform: translateX(0);
+  }
+
+  .nav-bottom a {
+    text-align: center;
+    width: 100%;
   }
 }
 
