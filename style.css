@@ -399,7 +399,7 @@ body {
 
 .wrapper {
   margin: 100px auto 20px auto;
-  width: 76%;
+  width: 100%;
   padding: 0 20px;
 }
 
@@ -502,7 +502,7 @@ body {
 }
 
 .funding-top {
-  width: 90%;
+  width: 100%;
   position: relative;
 }
 
@@ -525,7 +525,7 @@ body {
 }
 
 .funding-bottom {
-  width: 90%;
+  width: 100%;
   padding-top: 10px;
   border-top: 1px solid rgba(255, 68, 34, 0.25);
   background-color: #fffaf8;
