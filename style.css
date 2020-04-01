@@ -41,6 +41,10 @@ body {
   *zoom: 1;
 }
 
+.hidden {
+  display: none;
+}
+
 /************************
 * NAVIGATION BAR STYLES *
 *************************/
