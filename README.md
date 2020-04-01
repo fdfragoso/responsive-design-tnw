@@ -62,7 +62,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - The Odin Project
-- Smashing Magazine
+- The New Web
 
 ## 📝 License
 
