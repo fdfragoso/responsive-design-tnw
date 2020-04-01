@@ -362,7 +362,7 @@ body {
   top: 24px;
   color: silver;
   font-weight: bold;
-  background-color: #000;
+  background-color: none;
 }
 
 .cover-header {
