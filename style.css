@@ -875,7 +875,13 @@ body {
 * MEDIA QUERY  *
 ****************/
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
-  .nav {
+
+
+  .nav-top {
+    padding-left: 106px;
+  }
+
+  .nav-center {
     padding-left: 106px;
   }
 
@@ -884,7 +890,7 @@ body {
   }
 
   .nav-logo a {
-    height: 112px;
+    height: 85px;
     display: flex;
     align-items: center;
   }
