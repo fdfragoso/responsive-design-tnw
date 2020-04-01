@@ -239,6 +239,7 @@ body {
   z-index: 2;
   width: 100%;
   height: auto;
+  margin-top: 10px;
 }
 
 /* TOP CONTENT */
@@ -947,6 +948,10 @@ body {
   .nav-bottom a {
     text-align: center;
     width: 100%;
+  }
+
+  .content {
+    margin-top: 10px;
   }
 
   .wrapper {
