@@ -345,11 +345,11 @@ body {
 .top-left-cover-logo {
   position: absolute;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg");
-  width: 60%;
+  width: 53%;
   height: 96px;
   background-size: 100% 100%;
   background-position: center;
-  left: 24px;
+  left: 0;
   top: 24px;
 }
 
