@@ -874,6 +874,27 @@ body {
 /***************
 * MEDIA QUERY  *
 ****************/
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    transform: translateX(0);
+
+  }
+
+  .nav-top {
+    display: none;
+  }
+
+  .nav-bottom {
+    display: block;
+  }
+}
+
 @media all and (max-width: 768px) {
   body {
     background-color: white;
