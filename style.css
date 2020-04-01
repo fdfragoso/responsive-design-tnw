@@ -892,12 +892,20 @@ body {
     display: flex;
     align-items: center;
   }
+
+  .top-left-cover-logo {
+    display: none;
+  }
 }
 
 @media all and (max-width: 768px) {
   body {
     background-color: white;
     width: 100%;
+  }
+
+  .top-left-cover-logo {
+    display: none;
   }
 
   .nav {
