@@ -933,6 +933,20 @@ body {
   .flex-wrap .latest-news-article-funding:nth-child(4) {
     display: none;
   }
+
+  .top-lef-cover-logo {
+    display: none;
+  }
+
+  .cover-tittle a {
+    font-size: 22px;
+    margin: 2px;
+  }
+
+  .top-right .cover-tittle a {
+    font-size: 16px;
+    margin: 2px;
+  }
 }
 
 @media all and (max-width: 768px) {
