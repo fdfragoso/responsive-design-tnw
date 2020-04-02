@@ -415,7 +415,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   margin: -10px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 /* LATEST */
@@ -946,6 +946,16 @@ body {
   .top-right .cover-tittle a {
     font-size: 16px;
     margin: 2px;
+  }
+
+  .tool .tool-apps {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .tools-section .tool {
+    flex-basis: 50%;
+    max-width: 50%;
   }
 }
 
