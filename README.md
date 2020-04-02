@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo](https://raw.githack.com/fdfragoso/responsive-design-tnw/features/index.html)
+[Live Demo](https://rawcdn.githack.com/fdfragoso/responsive-design-tnw/164dc13b3e5f205f2235ed40b52fdf7624c15d3c/index.html)
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- A compatible browser with HTML and CSS. 
+- A compatible browser with HTML and CSS.
 
 ### Install
 
@@ -33,7 +33,6 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 - Open the index.html file in any browser or edit using Visual Code or the preference IDE for web development
-
 
 ## Authors
 
