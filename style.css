@@ -912,6 +912,10 @@ body {
     display: none;
   }
 
+  .top {
+    height: 20em;
+  }
+
   .section-title-funding {
     display: block;
   }
