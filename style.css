@@ -414,8 +414,6 @@ body {
 .flex-wrap {
   display: flex;
   flex-flow: row wrap;
-  margin: -10px;
-  justify-content: space-between;
 }
 
 /* LATEST */
@@ -428,7 +426,6 @@ body {
   -webkit-flex-flow: row wrap;
   flex-flow: 0 1 auto;
   margin: -8px;
-  margin-left: 20px;
 }
 
 .section-title {
@@ -887,6 +884,12 @@ body {
 * MEDIA QUERY  *
 ****************/
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .wrapper {
+    margin: 100px auto 20px auto;
+    width: 100%;
+    padding: 0 20px;
+  }
+
   .nav-top {
     padding-left: 106px;
   }
@@ -921,7 +924,7 @@ body {
   }
 
   .flex-wrap {
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   .latest-news-article-funding {
