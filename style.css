@@ -62,6 +62,7 @@ body {
 }
 
 .nav-logo {
+  transition: all 0.4s;
   left: 0;
   position: absolute;
   top: 0;
@@ -408,16 +409,24 @@ body {
   padding: 0 20px;
 }
 
+/* flex container rule set for all the section of the page */
+
+.flex-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  margin: -10px;
+  justify-content: center;
+}
+
 /* LATEST */
 
 .latest {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
-  -webkit-flex: 0 1 auto;
   flex: 0 1 auto;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+  flex-flow: 0 1 auto;
   margin: -8px;
   margin-left: 20px;
 }
@@ -440,6 +449,8 @@ body {
   max-width: 25%;
   max-height: 50%;
   padding: 12px;
+  width: 269px;
+  min-width: 269px;
 }
 
 .latest-news-article-funding {
@@ -448,6 +459,7 @@ body {
   max-width: 25%;
   max-height: 50%;
   padding: 12px;
+  width: 239px;
 }
 
 .latest-news-img {
@@ -896,6 +908,17 @@ body {
   .top-left-cover-logo {
     display: none;
   }
+
+  .section-title-funding {
+    display: block;
+  }
+
+  .section-title-funding ul {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.5em;
+    align-items: center;
+}
 }
 
 @media all and (max-width: 768px) {
@@ -985,6 +1008,10 @@ body {
   .wrapper {
     width: 100%;
     padding-top: 190px;
+  }
+
+  .flex-wrap {
+    display: block;
   }
 
   .latest,
