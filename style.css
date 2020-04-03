@@ -927,10 +927,6 @@ body {
     align-items: center;
   }
 
-  .flex-wrap {
-    /* justify-content: space-between; */
-  }
-
   .latest-news-article-funding {
     width: 33%;
     max-width: 33%;
